@@ -1,9 +1,9 @@
 class ntp {
-	package { "ntp":
-		ensure => installed
-	}
+  package { "ntp":
+	ensure => installed
+  }
 
-	service { "ntpd":
-		ensure => running,
-	}
+  service { "ntp":
+	ensure => running
+  }
 }
